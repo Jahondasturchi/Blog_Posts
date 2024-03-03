@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<div class="bosh">
+    <div class="create_post">
+        <form action="" method="post">
+            <h4>Create a post</h4>
+            {% csrf_token %}
+            {{form}}
+            <input type="submit" class="btn btn-primary  registerbutton" value="Create a Post">
+        </form>
+    </div>
+    <div class="posts">
+        
+      {% for el in obj %}
+            <div class="element">
+                <div class="user"><h5>{{el.author}}</h5></div>
+                <p><i>{{el.created}}</i></p>
+                <hr>
+                <h3><a href="{% url 'edit' el.pk %}">{{el.title}}</a></h3>
+                <p>{{el.content}}</p>
+                
+            </div>
+            
+      {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

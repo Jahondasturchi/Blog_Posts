@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %} edit {% endblock %}
+
+{% block content %}
+
+        <div class="yangi">
+                <div class="user"><h5>{{el.author}}</h5></div>
+                <p><i>{{el.created}}</i></p>
+                <hr>
+                <h3>{{el.title}}</a></h3>
+                <a href="#">Comments: {{son}} </a>
+                <p>{{el.content}}</p>
+                <hr>
+                {% if comments %}
+            <div id="comm"  style="margin: 4px, 4px; padding: 4px; width: 850px; height: 200px; overflow-x: auto; overflow-y: auto;
+            text-align: justify;" >
+                {% for el in comments %}
+                <div>
+                    <h3>{{el.author}}:</h3>
+                    <i>{{el.created}}</i>
+                    <p>{{el.text}} </p>
+                </div>
+                {% endfor %}
+                </div>
+                {% endif %}
+            <form action="" method="post">
+                {% csrf_token %}
+                {{comm}}
+                <input type="submit"  class="btn btn-primary " style="margin-top: 10px;" value="send">
+            </form>
+         
+        </div>
+
+
+{% endblock %}

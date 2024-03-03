@@ -1,0 +1,1 @@
+document.getElementById('myh1').textContent = 'Home page'

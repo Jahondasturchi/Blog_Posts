@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.home{
+    margin: 50px 50px;
+    padding: 20px;
+    height: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+h5{
+    font-size:48px;
+    display: inline-flex;
+    margin: 0 50px;
+}
+.register{
+    width: 500px;
+    margin: 100px auto;
+    border: 2px solid rgb(31, 178, 228);
+    padding: 20px;
+    border-radius: 10px;
+}
+.register h1{
+    text-align: center;
+}
+.registerbutton{
+    width: 100%;
+
+}
+.bosh{
+    width: 100%;
+    position: relative;
+  
+}
+.create_post{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 400px;
+    display: inline-block;
+    margin: 50px 30px;
+    padding: 20px;
+    border: 1px solid rgb(97, 97, 223);
+}
+.posts{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 800px;
+    height: auto;
+    margin: 20px 40px;
+    padding: 20px;
+}
+.element{
+    border-radius: 5px;
+    border: 2px solid rgb(118, 118, 236);
+    box-shadow: 10px 10px 15px rgb(191, 194, 196);
+    padding: 20px;
+    margin: 20px 0px;
+}
+.user{
+
+    float: left;
+    height: 100%;
+    margin: 5px 10px;
+    border-right: 2px solid black;
+}
+.yangi{
+    margin: 30px auto;
+    width: 900px;
+    padding: 30px;
+    border: 1px solid rgb(91, 91, 207);
+    box-shadow: 10px 10px 15px rgb(191, 194, 196);
+}
+.comment{
+    width: 100%;
+    display: block;
+    margin: 5px 0 10px 0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#comm{
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 800px;
+    height:100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
